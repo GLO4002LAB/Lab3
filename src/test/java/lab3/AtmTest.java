@@ -48,6 +48,7 @@ public class AtmTest {
 		willThrow(new RuntimeException()).given(account).withDraw(AMOUNT);
 		atm.withdrawMoney(ACCOUNTNUMBER, AMOUNT);
 		
+		
 	}
 
 }
