@@ -16,4 +16,12 @@ public class Atm{
 		cashDispenser.giveMoney(amount);
 	}
 
+	public void transferMoney(int fromAccountNumber, int targetAccountNumber, double amount) {
+		Account fromAccount = bank.findAccountByNumber(fromAccountNumber);
+		Account targetAccount = bank.findAccountByNumber(targetAccountNumber);
+		fromAccount.withDraw(amount);
+		targetAccount.addAmount(amount);
+		
+	}
+
 }
