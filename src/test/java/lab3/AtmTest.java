@@ -3,7 +3,6 @@ package lab3;
 import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.willReturn;
 import static org.mockito.BDDMockito.willThrow;
-import static org.mockito.BDDMockito.when;
 import static org.mockito.Mockito.*;
 
 import org.junit.Before;
